@@ -1,0 +1,9 @@
+{
+  "@@locale": "bn",
+  "appTitle": "থিম ও ভাষা পরিবর্তনকারী",
+  "changeTheme": "থিম পরিবর্তন করুন",
+  "changeLanguage": "ভাষা পরিবর্তন করুন",
+  "switchToDark": "ডার্ক থিম চালু করুন",
+  "switchToLight": "লাইট থিম চালু করুন",
+  "currentLanguage": "বর্তমান ভাষা: {lang}"
+}

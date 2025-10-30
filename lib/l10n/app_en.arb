@@ -1,0 +1,9 @@
+{
+  "@@locale": "en",
+  "appTitle": "Theme & Language Changer",
+  "changeTheme": "Change Theme",
+  "changeLanguage": "Change Language",
+  "switchToDark": "Switch to Dark Theme",
+  "switchToLight": "Switch to Light Theme",
+  "currentLanguage": "Current Language: {lang}"
+}
