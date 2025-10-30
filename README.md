@@ -59,3 +59,27 @@ lib/
 │
 └── main.dart
 ```
+
+Theme and Language Toggle Buttons
+
+The app includes two buttons on the UI to allow users to easily switch the theme and language.
+
+1. Theme Toggle Button
+
+```bash
+ElevatedButton(
+  onPressed: () async {
+    await ref.read(themeNotifierProvier.notifier).toggleTheme();
+  },
+  child: Text(
+    themeMode == ThemeMode.light
+        ? context.locale.switchToDark
+        : context.locale.switchToLight,
+  ),
+),
+```
+- Purpose: Switches the app between light mode and dark mode.
+-How it works:
+ - It uses the themeNotifierProvider to manage the app’s theme state.
+ - When pressed, it calls toggleTheme(), which switches between ThemeMode.light and ThemeMode.dark.
+ - The button text dynamically updates based on the current theme, showing either "Switch to Dark" or "Switch to Light".
