@@ -10,7 +10,7 @@ with user preferences **persisted using `shared_preferences`**.
 
 | Dark Mode | Light Mode |
 |------------|-------------|
-| ![Dark Theme](screenshots/dark.png) | ![Light Theme](screenshots/light.png) |
+| <img src="screenshots/dark.png" width="300"/> | <img src="screenshots/light.png" width="300"/> |
 
 ---
 
@@ -30,17 +30,22 @@ Text(context.locale.changeLanguage)
 ✅ Clean, scalable folder architecture
 ✅ Built with Riverpod (no BuildContext dependencies in state logic)
 
+
+🧱 Folder Structure
+
 lib/
-├── core/
-│   ├── theme/
-│   │   ├── app_theme.dart
-│   │   ├── theme_notifier.dart
-│   │   └── theme_provider.dart
-│   │
+├── application/
 │   └── localization/
+│       ├── gen/                      # Generated l10n files (AppLocalizations)
 │       ├── localization_extension.dart
 │       ├── locale_notifier.dart
 │       └── locale_provider.dart
+│
+├── core/
+│   └── theme/
+│       ├── app_theme.dart
+│       ├── theme_notifier.dart
+│       └── theme_provider.dart
 │
 ├── features/
 │   └── home/
@@ -52,4 +57,3 @@ lib/
 │   └── app_bn.arb
 │
 └── main.dart
-
