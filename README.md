@@ -66,7 +66,7 @@ The app includes two buttons on the UI to allow users to easily switch the theme
 
 1. Theme Toggle Button
 
-```bash
+```dart
 ElevatedButton(
   onPressed: () async {
     await ref.read(themeNotifierProvier.notifier).toggleTheme();
@@ -86,7 +86,7 @@ ElevatedButton(
 
 
 2. Language Toggle Button
-```bash
+```dart
 ElevatedButton(
   onPressed: () async {
     await ref.read(localeNotifierProvider.notifier).toggleLocale();
