@@ -25,7 +25,7 @@ with user preferences **persisted using `shared_preferences`**.
 ✅ **BuildContext extension** for easy access:
 ```dart
 Text(context.locale.changeLanguage)
-```dart
+```
 
 ✅ Clean, scalable folder architecture
 ✅ Built with Riverpod (no BuildContext dependencies in state logic)
