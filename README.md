@@ -60,7 +60,7 @@ lib/
 └── main.dart
 ```
 
-Theme and Language Toggle Buttons
+### Theme and Language Toggle Buttons
 
 The app includes two buttons on the UI to allow users to easily switch the theme and language.
 
@@ -79,7 +79,28 @@ ElevatedButton(
 ),
 ```
 - Purpose: Switches the app between light mode and dark mode.
--How it works:
+### How it works: 
  - It uses the themeNotifierProvider to manage the app’s theme state.
  - When pressed, it calls toggleTheme(), which switches between ThemeMode.light and ThemeMode.dark.
  - The button text dynamically updates based on the current theme, showing either "Switch to Dark" or "Switch to Light".
+
+
+2. Language Toggle Button
+```bash
+ElevatedButton(
+  onPressed: () async {
+    await ref.read(localeNotifierProvider.notifier).toggleLocale();
+  },
+  child: Text(context.locale.changeLanguage),
+),
+```
+- Purpose: Switches the app’s language dynamically.
+### How it works: 
+- It uses the localeNotifierProvider to manage the app’s locale (language) state.
+- When pressed, it calls toggleLocale(), which changes the app’s language (for example, from English to another supported language).
+- The button text always shows "Change Language" in the current locale.
+
+### Summary:
+- The first button toggles between light and dark theme.
+- The second button toggles the app’s language.
+- Both buttons use Riverpod state management to update the UI immediately when pressed.
