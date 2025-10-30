@@ -33,6 +33,7 @@ Text(context.locale.changeLanguage)
 
 🧱 Folder Structure
 
+```bash
 lib/
 ├── application/
 │   └── localization/
@@ -57,3 +58,4 @@ lib/
 │   └── app_bn.arb
 │
 └── main.dart
+```
